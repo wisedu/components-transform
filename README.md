@@ -1,1 +1,1 @@
-# components-transform
+扫描指定文件夹下的所有文件,然后将内容按照子文件进行分类,以文件名为key,文件内容为value,拼装成一个json对象

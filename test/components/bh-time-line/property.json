@@ -1,0 +1,9 @@
+{
+  "componentType": "js",
+  "sourceTag": "bh-time-line",
+  "targetTag": "div",
+  "isCloseTag": true,
+  "initFun": "bhTimeLine",
+  "initType": "object",
+  "isNeedMock": true
+}
