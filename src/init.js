@@ -97,7 +97,11 @@ function parseHtml(_tagName, _tagAttributes, _tagOpenEndFlag, _specialTag, _comp
     }
     
     if(!hasParseHtmlFlag){
-        html = parseNormalOpenTag(_tagName, _tagAttributes);
+        if(_tagOpenEndFlag === 'open'){
+            html = parseNormalOpenTag(_tagName, _tagAttributes);
+        }else{
+            html = parseNormalCloseTag(_tagName);
+        }
     }
 
     return {
@@ -114,5 +118,10 @@ function parseHtml(_tagName, _tagAttributes, _tagOpenEndFlag, _specialTag, _comp
  */
 function parseNormalOpenTag(_tagName, _tagAttributes){
     let html = `<${_tagName} ${utils.obj2str(_tagAttributes)}>`;
+    return html;
+}
+
+function parseNormalCloseTag(_tagName){
+    let html = `<${_tagName}>`;
     return html;
 }
