@@ -1,6 +1,6 @@
 {
   "name": "components-transform",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "根据提供的组件配置，将html页面中特定的标签转换成所配置的组件",
   "main": "index.js",
   "directories": {
