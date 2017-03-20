@@ -122,6 +122,6 @@ function parseNormalOpenTag(_tagName, _tagAttributes){
 }
 
 function parseNormalCloseTag(_tagName){
-    let html = `<${_tagName}>`;
+    let html = `</${_tagName}>`;
     return html;
 }
